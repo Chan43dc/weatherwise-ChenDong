@@ -1,0 +1,14 @@
+User: I want user to ask questions like “what’s the temperature” and get response. How?
+
+ChatGPT: You can create a `parse_weather_question()` function to detect keywords like "temperature", "rain", "wind" etc.
+
+User: Should I use regular expressions?
+
+ChatGPT: You can, but for simple checks, just use `if "temperature" in question.lower()`.
+
+User: And then return parsed info?
+
+ChatGPT: Yes, for example:
+return {"location": "Perth", "attributes": ["temp"]}
+
+User: Ok this is clear now. Thanks.
