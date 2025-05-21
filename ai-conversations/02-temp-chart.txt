@@ -1,0 +1,20 @@
+User: How can I draw a temperature chart in my weather app using python?
+
+ChatGPT: You can use matplotlib for that. First extract datetime and temp from your weather data, then plot:
+
+plt.plot(datetimes, temps)
+
+User: I have a dictionary like this:
+
+{
+ "forecast": [
+  {"datetime": "2025-05-21 12:00", "temp": 25}
+ ]
+}
+
+ChatGPT: Great! Just loop over that to build your x and y lists:
+
+datetimes = [d['datetime'] for d in forecast]
+temps = [d['temp'] for d in forecast]
+
+User: Ok thanks, I will try plot now.
