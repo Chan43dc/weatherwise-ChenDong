@@ -1,0 +1,17 @@
+User: Hello, I’m working on a weather project using OpenWeatherMap API in Colab. But I keep getting “Failed to fetch weather data.” Any idea what’s wrong?
+
+ChatGPT: That usually means the API key isn’t working properly. Are you including it in the URL?
+
+User: Yes, I think so. I used this:
+url = "https://api.openweathermap.org/data/2.5/forecast?q=Perth&appid=MYKEY&units=metric"
+
+ChatGPT: Okay, a couple of things to check:
+1. Replace "MYKEY" with your real API key.
+2. Make sure your key is active and not expired.
+3. Copy and paste it into your browser. What message do you see?
+
+User: The browser shows a 401 error.
+
+ChatGPT: That means your key is invalid or not activated yet. Try creating a new key in your OpenWeatherMap account and wait a few minutes before using it.
+
+User: Got it. I’ll make a new key and test again.
