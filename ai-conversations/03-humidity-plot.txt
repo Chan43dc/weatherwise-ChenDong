@@ -1,0 +1,15 @@
+User: I want to draw a rain or humidity chart like bar chart. Is that possible?
+
+ChatGPT: Yes! You can use matplotlib’s `plt.bar()` to show humidity.
+
+User: My data looks like:
+[{"datetime": "2025-05-21 15:00", "humidity": 60}]
+
+ChatGPT: Then do:
+plt.bar(datetimes, humidities)
+
+Make sure:
+datetimes = [e["datetime"] for e in forecast]
+humidities = [e["humidity"] for e in forecast]
+
+User: Got it. Looks nice! Thanks.
