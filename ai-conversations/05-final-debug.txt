@@ -1,0 +1,17 @@
+User: I run everything but `get_weather_data()` still returns error.
+
+ChatGPT: Is it returning {"error": "Failed to fetch weather data."}?
+
+User: Yes exactly that.
+
+ChatGPT: Try printing the actual status code:
+print(response.status_code)
+print(response.text)
+
+User: It says 401 invalid key…
+
+ChatGPT: That confirms API key issue. While testing, you can use mock data if needed.
+
+User: Yes I did that. Now graph and question answering works.
+
+ChatGPT: Excellent! You’re ready to submit then.
