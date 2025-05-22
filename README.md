@@ -1,63 +1,37 @@
-# 🌦️ WeatherWise Template
+This is my final project for the WeatherWise assignment. It’s a small weather assistant that I built using Python, where users can check the weather, see some charts, and even ask weather questions like “Will it rain in Perth today?”.
 
-Welcome to the **WeatherWise Assignment Starter Template**! This repository helps you kickstart your project by combining Python, weather APIs, data visualisation, and AI-assisted development. 🤖📊
-
-![Build With AI](https://img.shields.io/badge/Built_with-AI-blueviolet?logo=openai)
-![Python](https://img.shields.io/badge/Made_with-Python-3776AB?logo=python)
-![Visualisation](https://img.shields.io/badge/Includes-Visualisations-orange?logo=plotly)
-
----
-
-## 🚀 How to Use This Template
-
-1. Click **"Use this template"** on GitHub to create your own copy.
-2. Rename your repository to something like `weatherwise-jane-doe`.
-3. Clone it and start developing in `starter_notebook.ipynb`.
-
----
-
-## 📁 Folder Structure
-
-- `starter_notebook.ipynb` — Main notebook to build your project.
-- `ASSIGNMENT.md` — Full assignment specification.
-- `ai-conversations/` — Save your `.txt` AI conversations here.
-- `resources/` — Guides, prompting tips, and AI technique examples.
-- `submission/` — Files to help you finalise your submission:
-  - `checklist-md.md` — Submission checklist
-  - `reflection.md` — Write your 300–500 word project reflection
-  - `one-page-summary.md` — (Optional) Your own summary of key ideas or process
-
----
-
-📄 **Quick Overview:**  
-A one-page summary of the full assignment is available in [`resources/assignment-summary.md`](resources/assignment-summary.md).
-
----
-
-## 📓 Submission Checklist
-
-✅ Complete all required functions  
-✅ Include at least 5 AI conversations in `ai-conversations/`  
-✅ Document your intentional prompting  
-✅ Fill in your project reflection in `submission/reflection-template.md`  
-✅ Zip your project and upload it to the LMS  
-
----
-
-🧠 AI Conversations  
-Save your AI interactions in the `ai-conversations/` folder.  
-See `ai-conversations/how-to-log-ai-conversations.md` for details.
+I used Google Colab to build the notebook, and I also used ChatGPT to help me plan, debug, and improve the code step by step.
 
 
---
-## 🧠 Need Help with AI Prompts?
+What this project can do?
+Get weather data (like temperature and rain chance) for different cities
+Show two charts:
+   Max temperature for the next 5 days
+   Rain chance for the next 5 days
+ Let users type natural questions (like talking to a chatbot)
+ Give back a simple natural-language answer
 
-Check out:
-Check out:
-- `resources/ai-tips-tricks.md` — Prompting tips and pitfalls
-- `resources/sample-prompting-journey.md` — Full example of AI-enhanced development
-- `resources/prompts-by-method-step.md` — Prompts aligned with the 6-step dev process
-- `resources/before-after-example.md` — Required: Show how your prompting improved AI-generated code
+ How to use it?
+1. Open `starter_notebook.ipynb` in Google Colab  
+2. Run all cells from top to bottom  
+3. At the end, type a question like “What’s the weather in Tokyo tomorrow?”  
+4. Or try running the chart cells for temperature or rain
 
 
-Good luck and have fun! 💡🌤️
+
+AI using in this project
+
+I used ChatGPT during development. It helped me with:
+Writing functions step by step
+Debugging problems when the code didn’t work
+Improving the code with better logic
+Understanding how to work with JSON from the weather API
+
+You can see all my conversations in the folder `ai-conversations/`.
+
+Also:
+before_after_example.md` shows how the code changed after AI help  
+PROMPTING.md` explains how I asked ChatGPT and what techniques I used
+
+
+
