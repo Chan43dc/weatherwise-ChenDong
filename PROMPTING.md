@@ -1,66 +1,11 @@
-# 🧠 PROMPTING.md: How I Used AI in This Project
+My Use of ChatGPT in WeatherWise Project
 
-This file explains how I used ChatGPT (and sometimes Copilot) to help me complete my WeatherWise project. I didn’t just ask for code — I learned how to guide the AI to improve things step by step.
+This file explains how I used ChatGPT during the WeatherWise assignment. I didn’t just ask it to write code. I tried to guide it to help me understand and improve the project.
 
----
+Prompting strategies I used:
 
-## ✅ Prompting Techniques I Used
-
-### 1. Restating the Problem in My Own Words
-Before asking for help, I would often type the problem in my own way.
-
-**Example:**  
-> "I need to get weather info from a city like Perth. How do I connect to the API?"
-
-This helped the AI give answers that matched what I really meant.
-
----
-
-### 2. Asking for Pseudocode First
-Instead of jumping to full code, I sometimes asked for a logic outline first.
-
-**Example:**  
-> "Can you show me what steps I need before writing the function?"
-
-This helped me understand the structure before copying code.
-
----
-
-### 3. Debugging with Clear Questions
-When code didn’t work, I copied the error and added what I tried.
-
-**Example:**  
-> "I keep getting `KeyError: 'forecast'` when I try to access JSON. What am I doing wrong?"
-
-The AI helped me read JSON step-by-step and correct the issue.
-
----
-
-### 4. Requesting Modular Improvements
-After seeing a long block of code, I asked the AI to break it into cleaner functions.
-
-**Example:**  
-> "Can we split this into a chart function and a response function?"
-
-This helped me keep the notebook clean and modular.
-
----
-
-### 5. Asking for Edge Case Handling
-I asked the AI how to improve error handling (e.g. when city names are invalid or no internet).
-
-**Example:**  
-> "What if the city is wrong? Can I add a try-except block to show a message?"
-
-The AI helped me add exception handling so the program wouldn’t crash.
-
----
-
-## 📁 Related Files
-
-- See `ai-conversations/` folder for the full text of my ChatGPT chats.
-- See `before_after_example.md` for examples of code improvements from prompting.
-
----
-
-*Last updated: 2025-05-22*
+1. I started by describing the problem in my own words. For example, I told ChatGPT “I’m trying to get the weather data from wttr.in API but I don’t know how to extract temperature”. This helped me get a more relevant and simpler explanation.
+2. I asked for steps or logic first before writing full code. For example, I said “can you give me the basic logic for plotting a temperature chart?” and then I tried writing it myself before asking for full code.
+3. When something didn’t work, I copied the error message and explained what I had tried. Like one time I got a KeyError for 'forecast' and I asked “why am I getting this error when I use weather_data like forecast
+4. I also asked for improvements. I told ChatGPT “how can I make this more modular?” and it suggested I move the visualisation code into a function. That made my notebook cleaner.
+5. I asked what to do if the user typed a wrong city name. ChatGPT helped me add try-except to catch API errors and return a friendly message instead of crashing.These are not just copy-paste prompts. I tried to learn how to ask better questions so I could also understand what was going wrong and fix it myself.I saved all my important ChatGPT chats in the ai-conversations folder. Also, I created before_after_example.md to show how some code was improved with help.
