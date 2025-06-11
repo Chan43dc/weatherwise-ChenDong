@@ -1,1 +1,74 @@
+SECTION 1 - PROMPT 1:
+I’m creating a CLI task manager in Python for my final project.
+It should let users add, list, and remove tasks.
+Please write pseudocode using only basic Python techniques we’ve learned in class,
+such as lists for storage, functions, input(), print(), and while loops.
+Do not use any advanced features like classes or external libraries.
+Use a clear and structured plan like we learned in Week 2.
+
+AI RESPONSE:
+PROBLEM:
+Create a simple CLI task manager that allows users to add, view, and remove tasks.
+
+INPUT:
+- User selections from a menu
+- Task descriptions
+- Index number for removing tasks
+
+OUTPUT:
+- Confirmation messages
+- Task list
+- Error messages
+
+PSEUDOCODE:
+
+DEFINE tasks as empty list
+
+FUNCTION add_task():
+    ASK user for task description
+    APPEND task to tasks
+    DISPLAY "Task added"
+
+FUNCTION list_tasks():
+    IF tasks is empty:
+        DISPLAY "No tasks"
+    ELSE:
+        FOR each task with index:
+            DISPLAY index + 1 and task
+
+FUNCTION remove_task():
+    ASK user for task number
+    CONVERT to integer and subtract 1 for index
+    IF index is valid:
+        REMOVE task at index
+        DISPLAY "Task removed"
+    ELSE:
+        DISPLAY "Invalid number"
+
+FUNCTION display_menu():
+    DISPLAY menu:
+        1. Add task
+        2. List tasks
+        3. Remove task
+        4. Quit
+
+FUNCTION main():
+    WHILE True:
+        CALL display_menu()
+        ASK user for choice
+        IF choice is 1:
+            CALL add_task()
+        ELIF choice is 2:
+            CALL list_tasks()
+        ELIF choice is 3:
+            CALL remove_task()
+        ELIF choice is 4:
+            DISPLAY "Goodbye"
+            BREAK
+        ELSE:
+            DISPLAY "Invalid option"
+
+COURSE CONSTRAINT CHECK:
+I used the planning method from Week 2: Computational Thinking and Planning Before Coding.
+This helped me break the program into small functions before writing code.
 
